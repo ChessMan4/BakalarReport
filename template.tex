@@ -1,0 +1,48 @@
+\documentclass{scrbook}
+
+
+\begin{document}
+
+\title{Vyhodnoceni mereni rozmeru}
+
+\subtitle{Pouzite pristroje}
+
+\begin{center}
+\begin{tabular}{ c c }
+ \VAR{stroj1} & \VAR{chyba1} \\ 
+ \VAR{stroj2} & \VAR{chyba2} \\  
+ \VAR{stroj3} & \VAR{chyba3}    
+\end{tabular}
+\end{center}
+
+\subtitle{Tabulky namerenych a zpracovanych hodnot}
+
+\VAR{table1}
+
+\VAR{table2}
+
+Aritmeticky prumer:
+[X = x = 1/n \sum_{k=1}^{n} X_k]
+Pr.: [a = 1/10 \sum_{k=1}^{10} a_k = 10,48 mm]
+
+Standardni nejistota typu A
+[u_A(x) = \sqrt{1/n*(n-1)*\sum_{k=1}^{n} (X_k - X)^2}]
+Pr.: [u_A(x) = \sqrt{1/10*(10-1)*\sum_{k=1}^{10} (a_k - a)^2} = 0,036 mm]
+
+Standardni nejistota typu B
+Osobni chyba (0,1 mm): [u_B1(X) = Z_1/k = 0,1/\sqrt{3} = 0,0577 mm]
+Chyba meridla: mikrometr: [u_B21(X)= u_b(a) = u_b(d) = Z_21/k = 0,01/\sqrt{3} = 0,0058 mm]
+			   posuvka: [u_B22(X)= u_b(b) = u_b(c) = u_b(v) = Z_22/k = 0,05/\sqrt{3} = 0,0289 mm]
+			   
+Kombinovana standardni nejistota
+[u_c = \sqrt{u_A^2 + u_B^2}]
+
+Vysledky jednotlivych parametru namerenych primou metodou:
+
+a = \VAR{vys1}
+b = \VAR{vys2}
+c = \VAR{vys3}
+d = \VAR{vys4}
+v = \VAR{vys5}
+
+\end{document}
